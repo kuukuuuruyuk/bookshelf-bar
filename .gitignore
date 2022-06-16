@@ -2,3 +2,5 @@
 node_modules
 package-lock.json
 bookshelf-bar.zip
+bookshelf-bar-webserver.pem
+bookshelf-bar-api-webserver.pem
