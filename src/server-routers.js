@@ -8,6 +8,13 @@ const {
 
 const serverRouters = [
   {
+    path: '/',
+    method: 'get',
+    handler: (_request, h) => {
+      return h.view('index', {title: 'Selamat'});
+    },
+  },
+  {
     path: '/books',
     method: 'post',
     handler: storeBookHandler,

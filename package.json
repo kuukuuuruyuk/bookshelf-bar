@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@hapi/hapi": "^20.2.2",
+    "@hapi/vision": "^6.1.0",
+    "handlebars": "^4.7.7",
     "nanoid": "^2.1.11"
   }
 }
