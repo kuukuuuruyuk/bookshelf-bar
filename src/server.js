@@ -5,8 +5,10 @@ const Hapi = require('@hapi/hapi');
 const Handlebars = require('handlebars');
 const serverRouters = require('./server-routers');
 
+const host = process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0';
+
 const init = async () => {
-  const server = Hapi.server({port: 5000, host: 'localhost'});
+  const server = Hapi.server({port: 5000, host});
   await server.register(require('@hapi/vision'));
   server.views({
     engines: {html: Handlebars},
